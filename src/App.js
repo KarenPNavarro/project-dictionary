@@ -1,13 +1,21 @@
+import lookituplogo from "./lookituplogo.png";
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a href="https://karennavarro.io/" className="btn btn-primary">
-          Hello
-        </a>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <img src={lookituplogo} className="App-logo imf-fluid" alt="logo" />
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+        <footer className="App-footer">
+          <small>Coded by Karen Navarro</small>
+        </footer>
+      </div>
     </div>
   );
 }
