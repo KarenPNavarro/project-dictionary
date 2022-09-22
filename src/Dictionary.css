@@ -1,3 +1,19 @@
+.Dictionary section {
+  background: #4848c2;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0 0 0 / 10%);
+  margin: 20px 0;
+}
+
 .Dictionary-search {
   text-align: center;
+}
+
+.Dictionary input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
 }
