@@ -18,6 +18,11 @@ export default function Dictionary() {
     setPhotos(response.data.photos);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
@@ -37,7 +42,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <section>
         <h1>What word do you want to look up?</h1>
-        <form className="Dictionary-search" onSubmit={search}>
+        <form className="Dictionary-search" onSubmit={handleSubmit}>
           <input
             type="search"
             onChange={handleKeywordChange}
