@@ -44,6 +44,7 @@ export default function Dictionary() {
             placeholder="Search for a word"
           />
         </form>
+        <div className="hint"> Suggested words: coding, computer, data... </div>
       </section>
       <Results results={results} />
       <Photos photos={photos} />
